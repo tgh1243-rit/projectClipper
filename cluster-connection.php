@@ -7,8 +7,8 @@ $client = new MongoDB\Client(
 echo "Connection to database successful. <br>";
 
 $airline = $client->airline;
-$short = $airline->short;
-$document = $shortStats->findOne();
+$short = $airline->shortStats;
+$document = $short->findOne();
 
 highlight_string("<?php\n\$data =\n" . var_export($document, true) . ";\n?>");
 ?>
