@@ -1,0 +1,57 @@
+<!-- 
+	Kyle Clark, Brett Reilly, Tyler Hollinger, Jacob Pochron
+	ISTE-438
+	MongoDB Project
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>		
+        <meta charset="utf-8"/>
+        <!-- Site Title -->
+        <title>Airplane Delays</title>
+        
+        <head>
+        <base href="">
+        </head>
+
+        <!-- Site CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+		
+        <link href="index.css" rel="stylesheet" type="text/css">
+        
+        <!-- Import jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+        
+		<!-- Site Script -->
+		<script src="index.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div id="logoDiv">
+            <img class="logo" src="images/plane.png">
+        </div>
+        
+        <div id="searchDiv">
+            <form action="cluster-connection.php" method="POST" id="searchForm" >
+                <h4>Search for a Flight</h4>
+                
+                <p>Latitude</p>
+                <input type="text" id="latitudeInput" name="latitude" style="width: 50%" onkeydown="if (event.keCode == 13) document.getElementById('searchButton').click()"/>
+                
+                <p>Longitude</p>
+                <input type="text" id="longitudeInput" name="longitude" style="width: 50%" onkeydown="if (event.keCode == 13) document.getElementById('searchButton').click()"/>
+                
+                <p><input type="submit" value="Send" id="submit" /></p>
+            </form>
+        </div>
+        
+        <div id="dynamicComment"></div>
+
+        <div id="userComment"></div>
+    </body>
+    
+    <footer>
+        <p>&copy; 2020 Kyle Clark, Brett Reilly, Tyler Hollinger, Jacob Pochron</p>
+    </footer>
+</html>

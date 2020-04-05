@@ -1,0 +1,56 @@
+<!-- 
+	Kyle Clark, Brett Reilly, Tyler Hollinger, Jacob Pochron
+	ISTE-438
+	MongoDB Project
+	CSS
+-->
+
+body {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('images/clouds.jpg');
+}
+
+#logoDiv {
+    background-color: black;
+    background-image: url(images/clouds.jpg);
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+}
+
+#searchDiv {
+    background-color: black;
+    background-image: url(images/clouds.jpg);
+    padding: 2%;
+    margin: 2%;
+}
+
+#searchDiv h4 {
+    color: #E3E3E3;
+}
+
+#dynamicComment {
+    padding: 2%;
+    margin: 2%;
+    color: #E3E3E3;
+}
+
+#userComment {
+    padding: 2%;
+    margin: 2%;
+    color: #E3E3E3;
+}
+
+.eachUserComment{
+    background-color: #424242;
+    padding: 2%;
+    margin: 2%;
+}
+
+footer {
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+    color: #E3E3E3;
+}
