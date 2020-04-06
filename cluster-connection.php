@@ -32,7 +32,7 @@ highlight_string("<?php\n\$data =\n" . var_export($document, true) . ";\n?>");
     $latlon = array($longitude, $latitude);
     
     // assuming loc is the name of the 2dsphere index
-    $documentList = short->find(array('loc' => array('$nearSphere' => $lonlat)))->limit($limit);
+    $documentList = $short->find(array('loc' => array('$nearSphere' => $lonlat)))->limit($limit);
 
     foreach($documentlist as $doc) {
         var_dump($doc);
